@@ -1,0 +1,477 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dbeafe,
+            #fce7f3
+        );
+
+    color: #222;
+
+    padding: 40px 20px;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+    width: 100%;
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+/* FOTO */
+
+.profile-photo {
+    width: 145px;
+    height: 145px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.15);
+
+    margin-bottom: 18px;
+}
+
+
+/* NAMA */
+
+.profile h1 {
+    font-size: 34px;
+
+    margin-bottom: 7px;
+}
+
+
+/* PROFESI */
+
+.job {
+    color: #d9468f;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+
+/* DESKRIPSI */
+
+.description {
+    max-width: 500px;
+
+    margin: auto;
+
+    color: #666;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+/* ================= PROJECT ================= */
+
+.projects h2 {
+    text-align: center;
+
+    font-size: 27px;
+
+    margin-bottom: 5px;
+}
+
+
+.subtitle {
+    text-align: center;
+
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+/* PROJECT CARD */
+
+.project-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    padding: 14px 18px;
+
+    margin-bottom: 15px;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* NOMOR PROJECT */
+
+.project-number {
+    width: 50px;
+    height: 50px;
+
+    min-width: 50px;
+
+    border-radius: 50%;
+
+    background: #78aee8;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+/* INFO */
+
+.project-info {
+    flex: 1;
+}
+
+
+.project-info h3 {
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+
+.project-info p {
+    color: #777;
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+
+/* BAHASA */
+
+.language {
+    color: #5588c5;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+/* ARROW */
+
+.project-arrow {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #777;
+}
+
+
+/* ================= SOCIAL ================= */
+
+.social {
+    margin-top: 45px;
+}
+
+
+.social h2 {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+
+/* ICON */
+
+.social-icons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+.social-icon {
+    width: 62px;
+    height: 62px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 27px;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.social-icon:hover {
+    transform:
+        translateY(-7px)
+        scale(1.08);
+}
+
+
+/* INSTAGRAM */
+
+.instagram {
+    background: #e1306c;
+}
+
+
+/* GITHUB */
+
+.github {
+    background: #24292e;
+}
+
+
+/* VERCEL */
+
+.vercel {
+    background: #000;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    margin-top: 35px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* ================= MODAL ================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 1000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        rgba(0, 0, 0, 0.65);
+
+    padding: 30px 15px;
+
+    overflow-y: auto;
+}
+
+
+/* MODAL CONTENT */
+
+.modal-content {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+}
+
+
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+
+.modal-content p {
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+/* CLOSE */
+
+.close {
+    position: absolute;
+
+    right: 18px;
+    top: 12px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 35px;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+
+/* CODE */
+
+pre {
+    background: #111827;
+
+    color: #e5e7eb;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    overflow-x: auto;
+
+    margin-top: 10px;
+}
+
+
+code {
+    font-family:
+        Consolas,
+        monospace;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+
+    .profile h1 {
+        font-size: 27px;
+    }
+
+
+    .profile-photo {
+        width: 125px;
+        height: 125px;
+    }
+
+
+    .project-card {
+        border-radius: 25px;
+
+        padding: 12px;
+    }
+
+
+    .project-number {
+        width: 45px;
+        height: 45px;
+
+        min-width: 45px;
+    }
+
+
+    .project-info h3 {
+        font-size: 15px;
+    }
+
+
+    .project-info p {
+        font-size: 12px;
+    }
+
+
+    .modal-content {
+        padding: 22px;
+    }
+}

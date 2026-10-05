@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Saya</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- ================= PROFIL ================= -->
+        <section class="profile">
+
+            <!-- GANTI foto-saya.jpg DENGAN FOTO KAMU -->
+            <img src="foto image laila.jpeg"
+                 alt="Foto Profil"
+                 class="profile-photo">
+
+            <h1>Laila Nur Abidah</h1>
+
+            <p class="job">
+                Junior Web Developer
+            </p>
+
+            <p class="description">
+                Saya adalah pelajar yang sedang belajar membuat
+                website menggunakan HTML, CSS, JavaScript dan teknologi web.
+            </p>
+
+        </section>
+
+
+        <!-- ================= PROJECT ================= -->
+        <section class="projects">
+
+            <h2>My Projects</h2>
+
+            <p class="subtitle">
+                Beberapa project coding yang saya buat
+            </p>
+
+
+            <!-- PROJECT 1 -->
+                <a href="Tugas 1/index.html"
+   target="_blank"
+   class="project-card">
+
+    <div class="project-number">
+        01
+    </div>
+
+    <div class="project-info">
+
+        <h3>Tugas 1</h3>
+
+        <p>
+            Project website biodata menggunakan HTML dan CSS.
+        </p>
+
+        <span class="language">
+            HTML • CSS
+        </span>
+
+    </div>
+
+    <div class="project-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
+
+                    </a>
+
+
+            <!-- PROJECT 2 -->
+                <a href="Tugas 2/index.html"
+   target="_blank"
+   class="project-card">
+
+    <div class="project-number">
+        01
+    </div>
+
+    <div class="project-info">
+
+        <h3>Tugas 2</h3>
+
+        <p>
+            Project website biodata menggunakan HTML dan CSS.
+        </p>
+
+        <span class="language">
+            HTML • CSS
+        </span>
+
+    </div>
+
+    <div class="project-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
+
+                    </a>"></a>
+
+
+            <!-- PROJECT 3 -->
+            <a href="Tugas 3/index.html"
+   target="_blank"
+   class="project-card">
+
+    <div class="project-number">
+        01
+    </div>
+
+    <div class="project-info">
+
+        <h3>Tugas 3</h3>
+
+        <p>
+            Project website biodata menggunakan HTML dan CSS.
+        </p>
+
+        <span class="language">
+            HTML • CSS
+        </span>
+
+    </div>
+
+    <div class="project-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
+
+                    </a>"></a>
+
+
+            
+            
+
+
+
+
+           
+
+        <!-- ================= SOCIAL MEDIA ================= -->
+        <section class="social">
+
+            <h2>Find Me</h2>
+
+            <div class="social-icons">
+
+                <!-- INSTAGRAM -->
+                <a href="https://www.instagram.com/laylanurabd?stkn=MXRsNncydmJzbXk3eg=="
+                   target="_blank"
+                   class="social-icon instagram"
+                   title="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+
+                <!-- GITHUB -->
+                <a href="https://github.com/lailakanesarpl-pixel"
+                   target="_blank"
+                   class="social-icon github"
+                   title="GitHub">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <!-- VERCEL -->
+                <a href="https://vercel.com/account/settings"
+                   target="_blank"
+                   class="social-icon vercel"
+                   title="Vercel">
+
+                    <i class="fa-solid fa-v"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            © 2026 Portfolio Saya
+        </footer>
+
+    </main>
+
+
+    <!-- ================= POPUP PROJECT ================= -->
+
+    <div id="projectModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close"
+                    onclick="closeProject()">
+                ×
+            </button>
+
+            <h2 id="modalTitle">
+                Project
+            </h2>
+
+            <p id="modalDescription"></p>
+
+            <h3>Codingan Project</h3>
+
+            <pre><code id="projectCode"></code></pre>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
